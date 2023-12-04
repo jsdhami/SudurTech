@@ -1,6 +1,13 @@
 # Full Stack Website with CRUD and Auth Functions
 This README would normally document whatever steps are necessary to get the
 application up and running.
+demo
+
+
+
+https://github.com/jsdhami/CRUDAuth-Rails-App/assets/139155991/52f837ed-bb2f-44c3-9530-d97b3f26bea0
+
+
 
 # How To Start Development
 ## in Windows 
