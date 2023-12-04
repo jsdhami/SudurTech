@@ -1,0 +1,25 @@
+
+<div class="container">
+  <p style="color: green"><%= notice %></p>
+ <div class="container">
+  <%= render @blog %>
+ </div>
+  <div class="container mt-5">
+    <!-- <%= link_to "Edit this blog", edit_blog_path(@blog) %> | -->
+    <!-- <%= link_to "Back to blogs", blogs_path, class:"btn btn-outline-primary" %>
+    <%= button_to "Destroy this blog", @blog, method: :delete, class:"btn btn-outline-danger" %> -->
+    <div class="row">
+      <div class="col-md-6">
+        <%= link_to "Back to blogs", blogs_path, class:"btn btn-outline-primary" %>
+      </div>
+      <div class="col-md-6">
+       <% if user_signed_in? %>
+          <%= button_to "Destroy this blog", @blog, method: :delete, class:"btn btn-outline-danger" %>
+       <% end %>
+        </div>
+    </div>
+
+
+  </div>
+
+</div>

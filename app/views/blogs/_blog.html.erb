@@ -1,0 +1,49 @@
+<!-- <div id="<%= dom_id blog %>">
+  <p>
+    <strong>Title:</strong>
+    <%= blog.title %>
+  </p>
+
+  <p>
+    <strong>Desc:</strong>
+    <%= blog.desc %>
+  </p>
+
+  <p>
+    <strong>Img:</strong>
+    <%= image_tag(blog.img_url, width: 600) if blog.img? %>
+  </p>
+
+  <p>
+    <strong>Author:</strong>
+    <%= blog.author %>
+  </p>
+
+</div> -->
+
+
+
+
+        <div class="col" id="<%= dom_id blog %>">
+          <div class="card h-100">
+            <!-- <img src="https://www.wbcsd.org/var/site/storage/images/overview/news-insights/wbcsd-insights/accelerating-business-along-the-road-to-a-nature-positive-future/225091-1-eng-GB/Accelerating-business-along-the-road-to-a-nature-positive-future_i1140.jpg" class="card-img-top" alt="..."> -->
+            <%= image_tag(blog.img_url, width: 600, class: 'card-img-top') if blog.img? %>
+            <div class="card-body">
+              <h5 class="card-title"><%= blog.title %></h5>
+              <p class="card-text"><%= blog.desc %></p>
+              <p class="card-links">Author: <span><%= blog.author %></span></p>
+            </div>
+            <div class="card-footer">
+              
+              <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+              <%= link_to "Read More" , blog, class:"btn btn-primary" %>
+              <% if user_signed_in? %>
+                 <%= link_to "Edit" , edit_blog_path(blog), class:"btn btn-warning" %>
+                 <!-- <%= button_to "Destroy this blog", blog, method: :delete, class:"btn btn-warning" %> -->
+              <% end %>
+             
+            </div>
+          </div>
+        </div>
+
+   
