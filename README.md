@@ -2,7 +2,50 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+# How To Start Development
+## in Windows 
+- install ruby from official website 
+- install rails
+  ```
+  gem install rails
+  ```
+- clone the project
+  ```
+  git clone https://github.com/jsdhami/CRUDAuth-Rails-App.git
+  cd /CRUDAuth-Rails-App
+  ```
+- go to  install the bundle 
+  ```
+  bundle install
+  ```
+- run the rails server
+  ```
+  rails s
+  ```
+# How To Start Test
+- start test server
+   ```
+   rails server -p 5017
+   ```
+- start cypress
+  ```
+  yarn cypress open --project ./spec
+  ```
+
+## in Linux 
+
+comming soon......
+
+
+
+## Used Technology
+- Ruby On Rails
+- Bootstrap
+- Cypress
+- sqlite
+
+
+## Things you may want to cover:
 
 * Ruby version
 
