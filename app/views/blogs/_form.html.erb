@@ -31,7 +31,8 @@
     <%= form.label :author, style: "display: block" %>
     <%= form.text_field :author %>
   </div>
-   <%= current_user.id %>
+
+
   <%= form.hidden_field :user_id, value: current_user.id %>
   <div>
     <%= form.submit %>

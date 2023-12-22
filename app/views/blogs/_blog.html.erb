@@ -37,10 +37,13 @@
               
               <!-- <a href="#" class="btn btn-primary">Read More</a> -->
               <%= link_to "Read More" , blog, class:"btn btn-primary" %>
-              <% if user_signed_in? %>
+              <% if current_user.id == blog.user_id %>
+                 
                  <%= link_to "Edit" , edit_blog_path(blog), class:"btn btn-warning" %>
+
                  <!-- <%= button_to "Destroy this blog", blog, method: :delete, class:"btn btn-warning" %> -->
               <% end %>
+              
              
             </div>
           </div>

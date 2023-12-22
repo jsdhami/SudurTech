@@ -1,7 +1,14 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: %i[ show edit update destroy ]
   before_action :authenticate_user!, except: [:index, :show]
+  before_action :check_user, only: [:edit, :update, :destroy]
   
+  def check_user
+    if current_user != @blog.user
+      redirect_to root_url, alert: "Sorry, this blog belongs to someone else"
+    end
+  end
+ 
 
   # GET /blogs or /blogs.json
   def index

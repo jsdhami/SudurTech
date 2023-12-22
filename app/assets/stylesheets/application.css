@@ -21,17 +21,4 @@
     color: #000;
     text-align: center;
 }
-.notice{
-    
-    justify-content: center;
-    color: rgb(47, 255, 0);
-    margin-bottom: 1.5rem;
-    text-align: center;
-    animation: fadeOut 2s forwards;
-}
-@keyframes fadeOut {
-    to {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
+
