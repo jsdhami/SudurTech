@@ -18,7 +18,7 @@ https://github.com/jsdhami/CRUDAuth-Rails-App/assets/139155991/52f837ed-bb2f-44c
   ```
 - clone the project
   ```
-  git clone https://github.com/jsdhami/CRUDAuth-Rails-App.git
+  git clone https://github.com/jsdhami/SudurTech.git
   cd /CRUDAuth-Rails-App
   ```
 - go to  install the bundle 

@@ -31,7 +31,6 @@
           </li> -->
         </ul>
       <% if user_signed_in? %>
-      Signed in as <%= current_user.email %>.
       <%= button_to "", destroy_user_session_url, method: :delete, class:'btn btn-outline-danger bi bi-box-arrow-in-right mx-1' %>
       <!-- <%= link_to "Edit Profile", edit_user_registration_path, class:'btn btn-primary mx-1' %>  -->
       <%= link_to "", edit_user_registration_path, class:'bi bi-person-circle btn btn-outline-primary mx-1' %> 
