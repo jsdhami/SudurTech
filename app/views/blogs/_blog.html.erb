@@ -37,7 +37,7 @@
               
               <!-- <a href="#" class="btn btn-primary">Read More</a> -->
               <%= link_to "Read More" , blog, class:"btn btn-primary" %>
-              <% if current_user.id == blog.user_id %>
+              <% if user_signed_in? && current_user == blog.user  %>
                  
                  <%= link_to "Edit" , edit_blog_path(blog), class:"btn btn-warning" %>
 
