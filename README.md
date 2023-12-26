@@ -4,8 +4,7 @@ application up and running.
 demo
 
 
-
-https://github.com/jsdhami/CRUDAuth-Rails-App/assets/139155991/52f837ed-bb2f-44c3-9530-d97b3f26bea0
+https://github.com/jsdhami/SudurTech/assets/139155991/60b8ac85-fdda-4ed5-9ca2-a614cd6e5445
 
 
 
